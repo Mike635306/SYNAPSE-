@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYNAPSE</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="./js/index.js" defer type="module"></script>
+    <link rel="manifest" href="./manifest.json">
+</head>
+<body>
+   
+    <div id="root">
+         <div id="app">
+            <aside id="left-bar">
+                <div>
+                    <h2>SYNAPSE</h2>
+                </div>
+                <div>
+                    <input placeholder="Search" type="text" id="search">
+                </div>
+                <div class="contactsf"   >
+                <div id="contacts">
+                    <ul>
+                        <li id="openModalBtn"><img src="./assets/circle-user-round.svg" width="40px"alt=""><span>bratva</span><h5 class="for">Online</h5><div class="pules"></div>  </li>
+                    </ul>
+                </div>
+               
+                </div>
+            </aside>
+             <div id="audio-msg-notif">
+              <div class="spinner">
+                  <span class="spinner-part-0"></span>
+                  <span class="spinner-part-1"></span>
+                  <span class="spinner-part-2"></span>
+                  <span class="spinner-part-3"></span>
+                  <span class="spinner-part-0"></span>
+                  <span class="spinner-part-1"></span>
+                  <span class="spinner-part-2"></span>
+                  <span class="spinner-part-3"></span>
+              </div>
+                 <img src="./assets/x (1).svg" alt="">
+             </div>
+             <div id="plys-msg-notif"></div>
+                <aside class="right-bar-overlay">
+                    <div class="right-bar">
+                        <div>
+                             <h3>SYNAPSE</h3>
+                        </div>
+                        <div>
+                        <input placeholder="Search" type="text" id="search">
+                        </div>
+                     <ul id="lifg">
+                     <li class="rogc"><img src="./assets/circle-user-round.svg" width="40px"  alt=""><span>bratva</span><h5 class="for">Online</h5><div class="pules"></div></li>
+                     </ul>
+                    
+                    </div>
+                </aside> 
+             
+            <main id="chat-display">
+       
+                <button id="mobile_menu">
+                </button>
+                <div id="chat-msg-dialog"><div class="receiver">
+        
+        <div id="fileList"></div>
+    </div></div>
+                <div id="chat-display-message">
+                    <input id="message-input" placeholder=" your message.." type="text"> 
+                 
+                    <button type="button" class="open-modal-btn" id="openBtn" aria-label="Прикрепить файл">
+                        <svg class="open-modal-btn__icon" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2z"/></svg>
+                    </button>
+                    <div class="modal hidden" id="modal">
+                    <div class="modal__overlay" id="modalOverlay"></div>
+                    <div class="modal__content">
+                    <button type="button" class="modal__close" id="closeModalBtn"><img src="./assets/x (1).svg" alt=""></button>
+                    <input type="file" id="modalFileInput">
+                    <p id="modalFileLabel" class="modal-file-label"></p>
+                    <button type="button" id="modalSendFileBtn" class="modal-send-file-btn" disabled>Отправить файл</button>
+        </div>
+    </div>
+                    <button id="audio-msg"><img src="./assets/mic.svg" alt=""></button>
+                    <button id="send-msg"><img src="./assets/send.svg" alt=""></button>
+                    
+                </div>                                                                                                                                       
+            </main>                                                                                                                               
+         </div>                                                                                                                                            
+
+    </div>
+
+
+</body>
+</html>
+
+
+

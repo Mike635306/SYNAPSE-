@@ -1,0 +1,23 @@
+{
+  "name": "synapse",
+  "version": "1.0.1",
+  "description": "",
+  "keywords": [
+    "messenger"
+  ],
+  "license": "ISC",
+  "author": "ORTLIB.M",
+  "type": "commonjs",
+  "main": "/server/index.js",
+  "scripts": {
+    "test": "echo \"Stas hello\" && exit 1",
+    "dev": "nodemon server/index.js",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "socket.io": "^4.8.1"
+  }
+}
